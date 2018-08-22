@@ -1,0 +1,18 @@
+{
+  "name": "cordova-plugin-doze-settings",
+  "version": "0.1.0",
+  "description": "Check battery optimization settings and open settings screen for user to change.",
+  "cordova": {
+    "id": "cordova-plugin-doze-settings",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Liam Dobson",
+  "license": "ISC",
+  "homepage": "http://www.appware.co.uk"
+}

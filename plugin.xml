@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-doze-settings" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>DozeSettings</name>
+	<js-module name="DozeSettings" src="www/DozeSettings.js">
+		<clobbers target="cordova.plugins.DozeSettings" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="DozeSettings">
+				<param name="android-package" value="cordova.plugins.DozeSettings.DozeSettings" />
+			</feature>
+		</config-file>	
+		<source-file src="src/android/DozeSettings.java" target-dir="src/uk/co/appware/dozesettings" />
+	</platform>
+</plugin>
