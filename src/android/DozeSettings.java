@@ -52,8 +52,9 @@ public class DozeSettings extends CordovaPlugin {
 					
 					Context context = cordova.getActivity().getApplicationContext();
 					Intent intent = new Intent();
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 					intent.setAction(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS);
-					context.startActivity(intent);		
+					context.startActivity(intent);
 							
 					callbackContext.success("Settings opened.");
 					return true;
